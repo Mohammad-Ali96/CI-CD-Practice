@@ -52,4 +52,8 @@ jobs:
       - run: flutter clean
       - run: flutter build appbundle
 
+      - uses: actions/upload-artifact@master
+        with:
+          name: apk-build
+          path: build/app/outputs/apk/release
 
